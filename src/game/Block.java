@@ -12,41 +12,41 @@ public class Block {
 	
 	Block() {
 		int rd = (int) (Math.random() * 11);
-		switch (rd) {
-		case 0:
-			bc = Color.blue;
-			break;
-		case 1:
-			bc = Color.orange;
-			break;
-		case 2:
-			bc = Color.GRAY;
-			break;
-		case 3:
-			bc = Color.green;
-			break;
-		case 4:
-			bc = Color.BLACK;
-			break;
-		case 5:
-			bc = Color.PINK;
-			break;
-		case 6:
-			bc = Color.RED;
-			break;
-		case 7:
-			bc = Color.cyan;
-			break;
-		case 8:
-			bc = Color.MAGENTA;
-			break;
-		case 9:
-			bc = Color.YELLOW;
-			break;
-		case 10:
-			bc = Color.LIGHT_GRAY;
-			break;
-		}
+//		switch (rd) {
+//		case 0:
+//			
+//			break;
+//		case 1:
+//			
+//			break;
+//		case 2:
+//			
+//			break;
+//		case 3:
+//			
+//			break;
+//		case 4:
+//			
+//			break;
+//		case 5:
+//			bc = Color.PINK;
+//			break;
+//		case 6:
+//			
+//			break;
+//		case 7:
+//			bc = Color.cyan;
+//			break;
+//		case 8:
+//			bc = Color.MAGENTA;
+//			break;
+//		case 9:
+//			bc = Color.YELLOW;
+//			break;
+//		case 10:
+//			
+//			break;
+//		}
 		rd = (int) (Math.random() * 7);
 //		rd = 5;
 		switch (rd) {
@@ -59,6 +59,7 @@ public class Block {
 			blockPoint[2][Y] = 21;
 			blockPoint[3][X] = 7;
 			blockPoint[3][Y] = 21;
+			bc = Color.blue;
 			s = 0;
 			break;
 		case 1: // ㅗ
@@ -70,6 +71,7 @@ public class Block {
 			blockPoint[2][Y] = 20;
 			blockPoint[3][X] = 5;
 			blockPoint[3][Y] = 21;
+			bc = Color.orange;
 			s = 1;
 			break;
 		case 2: // ㄱ
@@ -81,6 +83,7 @@ public class Block {
 			blockPoint[2][Y] = 21;
 			blockPoint[3][X] = 6;
 			blockPoint[3][Y] = 20;
+			bc = Color.GRAY;
 			s = 2;
 			break;
 		case 3: // ㄴ
@@ -92,6 +95,7 @@ public class Block {
 			blockPoint[2][Y] = 21;
 			blockPoint[3][X] = 4;
 			blockPoint[3][Y] = 20;
+			bc = Color.green;
 			s = 3;
 			break;
 		case 4: //ㅁ
@@ -103,6 +107,7 @@ public class Block {
 			blockPoint[2][Y] = 20;
 			blockPoint[3][X] = 6;
 			blockPoint[3][Y] = 20;
+			bc = Color.BLACK;
 			s = 4;
 			break;
 		case 5: // 
@@ -114,6 +119,7 @@ public class Block {
 			blockPoint[2][Y] = 20;
 			blockPoint[3][X] = 6;
 			blockPoint[3][Y] = 20;
+			bc = Color.RED;
 			s = 5;
 			break;
 		case 6:
@@ -125,6 +131,7 @@ public class Block {
 			blockPoint[2][Y] = 20;
 			blockPoint[3][X] = 4;
 			blockPoint[3][Y] = 20;
+			bc = Color.LIGHT_GRAY;
 			s = 6;
 			break;
 		}

@@ -2,7 +2,7 @@ package game;
 
 import java.awt.Color;
 
-public class Move {
+public  class  Move {
 	static final int X = 0;
 	static final int Y = 1;
 
@@ -14,7 +14,7 @@ public class Move {
 		return true;
 	}
 
-	public Boolean down(Block block, View view) {
+	public synchronized Boolean down(Block block, View view) {
 		for (int i = 0; i < 4; i++) {
 			view.setColor(block.blockPoint[i][X], block.blockPoint[i][Y], Color.white);
 		}
@@ -78,20 +78,21 @@ public class Move {
 		}
 	}
 
-	public void fullLine(Block block, View view) {
+	public int fullLine(Block block, View view, int line) {
 		int num = 0;
 		for (int i = 1; i < 20; i++) {
 			for (int j = 1; j < 11; j++) {
-				view.textField.requestFocus();
 				if (view.getC(j, i) != Color.white) {
 					num++;
 				}
 			}
 			if (num == 10) {
+				line += 1;
 				view.lineDown(i);
 			}
 			num = 0;
 		}
+		return line;
 	}
 
 	public void rotate(Block block, View view) {
